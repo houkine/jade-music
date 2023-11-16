@@ -1,0 +1,53 @@
+.performancehire-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.performancehire-title{
+    font-size: 48px;
+    font-family: Cinzel,serif;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 8.5px;
+    color: #9c7410;
+}
+.performancehire-about{
+    font-size: 14px;
+    letter-spacing: 2px;
+    width: 40%;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.performancehire-content{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+}
+
+.performancehire-content-arrow{
+    width: 70px;
+    height: 130px;
+    margin: auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 48px;
+    color: #888;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.performancehire-content-list{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px;
+}
+.performancehire-content-image{
+    height: 400px;
+    margin: 10px;
+}

@@ -1,0 +1,107 @@
+.biography-container{
+    width: 80%;
+    margin: 10px auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.biography-title{
+    margin: 0 auto;
+}
+
+.biography-content{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+    overflow-y: auto;
+}
+
+.biography-content-img{
+    margin-right: 50px;
+    /* width: 500px; */
+    height: 60vh;
+}
+.biography-content-about{
+    min-width: 600px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+.biography-content-about::-webkit-scrollbar{
+    width : 10px; 
+}
+.biography-content-about::-webkit-scrollbar-thumb{
+    border-radius   : 10px;
+    background-color: #8b8b8b;
+    background-image: -webkit-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        transparent 75%,
+        transparent
+    );
+}
+.biography-content-about::-webkit-scrollbar-track{
+    box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.biography-content-about p{
+    line-height: 30px;
+    font-size: 18px;
+}
+
+/* ------------------------- biography-sector */
+
+.biography-sector-container{
+    width: 700px;
+    min-width: 500px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.biography-sector-switch{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    background-color: #8b8b8b;
+    height: 30px;
+    border-radius: 10px;
+}
+.biography-sector-switch-icon{
+    color: #fff;
+    margin-left: 10px;
+}
+.biography-sector-switch-title{
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+.biography-sector-content{
+    border-left: 1px solid #8b8b8b;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+.biography-sector-content p{
+    font-size: 14px;
+}
+
+/* ------------------------- */
+.biography-font1{
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.biography-font2{
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+}

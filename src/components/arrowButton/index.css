@@ -1,0 +1,22 @@
+
+.arrowButton-container{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 48px;
+    font-weight: 100;
+
+    background-color: #ddd;
+    opacity: 0.2;
+}
+
+.arrowButton-container:hover {
+    opacity: 0.6;
+    font-weight: 500;
+}

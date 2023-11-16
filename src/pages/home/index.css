@@ -1,0 +1,88 @@
+.home-container{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.home-content{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+.home-buttonList{
+    margin: 0 auto;
+    margin-top: -50px;
+    z-index: 999;
+    display: flex;
+}
+.home-button{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #000;
+    opacity: 0.6;
+    cursor: pointer;
+    margin: auto 15px;
+}
+.home-button-selected{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #000;
+    opacity: 0.2;
+    cursor: pointer;
+    margin: auto 15px;
+}
+.home-button:hover{
+    opacity: 0.2;
+}
+
+.home-arrowButton-left{
+    position: absolute;
+    left: 30px;
+    height: 50%;
+    width: 150px;
+    top: 25%;
+}
+
+.home-bg{
+    width: 100%;
+    height: 100%;
+    /* margin-bottom: 1px; */
+    /* flex: 1; */
+    transition: all 0.5s;
+    /* border: 1px solid black; */
+}
+.home-arrowButton-right{
+    position: absolute;
+    right: 30px;
+    height: 50%;
+    width: 150px;
+    top: 25%;
+}
+
+.home-title{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: Courier;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.home-p1{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Courier;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.home-p2{
+    font-size: 24px;
+    font-family: Courier;
+    
+    text-align: center;
+    margin-top: 10px;
+}

@@ -1,0 +1,158 @@
+.layout-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    background-image: url('https://ywmusic-resource.s3.ap-southeast-2.amazonaws.com/bg-5-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.layout-header{
+    width: 100%;
+    height: 100px;
+    min-height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.layout-header-logo{
+    color: black;
+    margin-left: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.layout-header-tagbar{
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.layout-header-tag{
+    height: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #aaa;
+    font-size: 16px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    /* .layout-header-logo {
+      animation: App-logo-spin infinite 10s linear;
+    } */
+}
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+    
+.layout-header-tag:hover {
+    color: #000;
+    font-weight: 500;
+}
+
+.layout-header-slider{
+    display: none;
+    margin-right: 30px;
+    align-items: center;
+}
+.layout-header-slider-icon{
+    cursor: pointer;
+}
+
+@media(max-width:576px){
+    .layout-header{
+        height: 50px;
+        min-height: 50px;
+    }
+    .layout-header-slider{
+        display: flex;
+    }
+    .layout-header-tagbar{
+        display: none;
+    }
+}
+
+.layout-body{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.layout-footer{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    opacity: 0.5;
+
+
+}
+
+
+/* ------------------------- portfolioCard */
+
+.floatingWindow-container{
+    width: 30px;
+    /* height: 100px; */
+
+    position: absolute;
+    right: 50px;
+    top: 80vh;
+
+}
+
+.floatingWindow-switch{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+
+    background-color: #696969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    color: #c2c2c2;
+}
+.floatingWindow-switch:hover{
+    color: #fff;
+    background-color: #868686;
+}
+
+.floatingWindow-content{
+    background-color: #4d4d4d;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 30px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.floatingWindow-content-item{
+    color: #c2c2c2;
+    margin: 5px;
+    size: 30;
+    cursor: pointer;
+}
+.floatingWindow-content-item:hover{
+    color: #fff;
+}
+
+/* ------------------------- portfolioCard */
+
+.sliderbar-container{
+    width: 30px;
+}

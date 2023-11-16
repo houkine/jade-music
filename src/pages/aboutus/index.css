@@ -1,0 +1,140 @@
+.aboutus-container{
+    width: 80%;
+    flex: 1;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutus-content{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.aboutus-content-title{
+    font-size: 48px;
+    font-family: Cinzel,serif;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 8.5px;
+    color: #9c7410;
+}
+
+.aboutus-content-list{
+    max-width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.aboutus-content-list-arrow{
+    width: 70px;
+    height: 130px;
+    margin: auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 48px;
+    color: #888;
+    cursor: pointer;
+    /* border: 1px solid black; */
+    border-radius: 25px;
+}
+
+.aboutus-content-list-arrow:hover{
+    color: #444;
+    background-color: #fff;
+    opacity: 0.4;
+}
+
+.aboutus-content-list-items{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.aboutus-content-listItem{
+    width: 33%;
+    display: flex;
+
+}
+
+.aboutus-content-detail{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    background-color: rgb(255, 255, 255, 0.6);
+}
+.aboutus-content-detail-left{
+    height: 600px;
+    margin: 10px;
+}
+.aboutus-content-detail-right{
+    margin: auto 10px;
+    margin-top: 10px;
+    
+}
+
+/* ------------------------- portfolioCard */
+
+.portfolioCard-container{
+    width: 100%;
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+.portfolioCard-content{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolioCard-content-image{
+    width: 250px;
+    height: 350px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.portfolioCard-content-image:hover{
+    opacity: 0.6;
+}
+
+.portfolioCard-content-name{
+    font-size: 18px;
+    color: #444;
+    letter-spacing: 2px;
+    font-weight: 500;
+
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    max-width: 200px;
+}
+.portfolioCard-content-detail{
+    font-size: 14px;
+    color: #444;
+
+    margin-top: 3px;
+    margin-left: 5px;
+    max-width: 200px;
+}
+/* ------------------------- */
+.aboutus-font1{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.aboutus-font2{
+    font-size: 18px;
+    font-weight: bold;
+}
