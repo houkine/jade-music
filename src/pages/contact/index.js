@@ -13,25 +13,24 @@ const Index = () =>{
 
     return(
         <div className="contact-container">
-            <div className="contact-title">
+            <div className="contact-title1">
                 Contact Us
             </div>
-            <div className="contact-detail">
-                <p>For enquiries, call us or message us</p>
-                <p>Tuesday to Friday 11am and 7pm (Melbourne time).</p>
-                <p>Saturday to Sunday 10am and 6pm (Melbourne time).</p>
+            <div className="contact-line" />
+            <div className="contact-title2">
+                Office
             </div>
             <div className="contact-detail">
-                <p>792 Burwood Rd, Camberwell, VIC 3124  |  Phone: (03) 7008 5007 |  Email. hello@sinobeats.com.au</p>
+                <div className="contact-decoration">EMAIL</div>
+                <div>xxxxx@email.com</div>
             </div>
-            <div className="contact-form">
-                <Input placeholder="First Name" value={firstName} onChange={e=>setFirstName(e.target.value)}/>
-                <Input placeholder="Last Name" value={lastName} onChange={e=>setLastName(e.target.value)}/>
-                <Input placeholder="Email" value={email} onChange={e=>setEmail(e.target.value)}/>
-                <InputArea placeholder="Message" value={message} onChange={e=>setMassage(e.target.value)}/>
+            <div className="contact-detail">
+                <div className="contact-decoration">NUMBER</div>
+                <div>0420 378 345</div>
             </div>
-            <div className="contact-button">
-                Submit
+            <div className="contact-detail">
+                <div className="contact-decoration">POSTAL ADDRESS</div>
+                <div>Shop 3/223 Calam Road, Sunnybank Hills</div>
             </div>
         </div>
     )

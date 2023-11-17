@@ -12,9 +12,9 @@ const Index = () =>{
     const [teacher, setTeacher] = useState()
 
     useEffect(() => {
-      let t_name_array=href.split('/')
+      let t_id_array=href.split('/')
         for (let index = 0; index < teacherList.length; index++) {
-            if (teacherList[index].name_en==t_name_array[t_name_array.length-1])
+            if (teacherList[index].id==t_id_array[t_id_array.length-1])
             {setTeacher(teacherList[index])
             console.log(teacherList[index]);}
         }
@@ -41,7 +41,7 @@ const Index = () =>{
 }
 
 const Sector = ({title,content}) =>{
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(true)
     const ButtonOnClick = () =>setIsOpen(!isOpen)
     return(
         <div className="biography-sector-container">

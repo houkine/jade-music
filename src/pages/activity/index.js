@@ -17,7 +17,7 @@ const Index = () =>{
 
     return(
         <div className="activity-container">
-            <div className="activity-header">
+            {/* <div className="activity-header">
                 <div 
                     className="activity-content-title-arrow"
                     onClick={()=>number>0&&setNumber(number-1)}
@@ -33,11 +33,14 @@ const Index = () =>{
                 >
                     {'>'}
                 </div>
-            </div>
+            </div> */}
             <div className="activity-content-list">
-                {activityList.map((activity,index)=>activity.category==EventList[number]&&(
-                    <ActivityCard activity={activity}/>
-                ))}
+                {activityList.map((activity,index)=>
+                    // activity.category==EventList[number]&&
+                    (
+                        <ActivityCard activity={activity}/>
+                    )
+                )}
             </div>
         </div>
     )

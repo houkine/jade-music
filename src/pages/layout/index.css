@@ -27,16 +27,47 @@
 }
 .layout-header-tagbar{
     display: flex;
-    margin-right: 50px;
+    margin:  auto;
     align-items: center;
 }
-
 .layout-header-tag{
     height: 20px;
     margin: 0 10px;
     cursor: pointer;
     color: #aaa;
     font-size: 16px;
+}
+.layout-header-tag-selected{
+    height: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+
+.layout-header-languagebar{
+    height: 20px;
+    margin: auto 0;
+    margin-right: 50px;
+    color: #aaa;
+    align-items: center;
+
+    display: flex;
+}
+.layout-header-languageicon{
+    margin: 0 2px;
+    cursor: pointer;
+    color: #aaa;
+    font-size: 16px;
+}
+.layout-header-languageicon-selected{
+    margin: 0 2px;
+    cursor: pointer;
+    color: #aaa;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
 }
 
 @media (prefers-reduced-motion: no-preference) {

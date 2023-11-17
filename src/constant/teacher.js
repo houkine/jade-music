@@ -1,11 +1,12 @@
 export default [
     {
+        id: 1,
         name_cn: 'Cara',
-        name_en: 'Cara',
-        instrement: 'Guzheng',
+        name_en: 'CARA SHEN',
+        instrement: 'Guzheng Artist in Residence',
         about:{
             name:'Cara  古筝教师 ',
-            standard: '教学程度：AAAAA级  教学费用：$80/60分钟（一对一）',
+            standard: '',
             profile:[
                 'Cara 5岁学琴至今， 从小接受专业训练，具有坚实的古筝基础以及丰富的专业音乐理论知识，2006年考入四川音乐学院附中，2011年获得优秀毕业生称号， 同年考入四川音乐学院。 先后师从于周天丽讲师，蒋倩副教授，刘媌副教授，著名教育家、演奏家国家一级演员何成育教授、“中国南派古筝传承者”饶宁新教授。Cara老师培养过许多古筝新生代，可进行中英文教学，所教授学生中均考过5-10级以及演奏级别，曾培养学生考进国家级示范高中（石室中学）',
             ],
@@ -20,18 +21,29 @@ export default [
                 '2021年 受迪拜世博音乐总监Harout Fazlian之邀参加古筝演奏者试镜 获得 《中国古筝艺术流派讲析》证书',
                 '2023年 白玉兰国际音乐节 澳新国际赛区华乐竞演大赛 综合专业组 一等奖',
             ],
+            overall_cn:[
+                '',
+            ],
+            overall_en:[
+                '',
+            ],
         },
         avatar: 'https://ywmusic-resource.s3.ap-southeast-2.amazonaws.com/teacher/cara_avatar.png',
         image: 'https://ywmusic-resource.s3.ap-southeast-2.amazonaws.com/teacher/cara_image.jpg',
-        position: "teacher",
+        position: "Founder",
+        position_style: {
+            fontSize: '16px',
+            fontWeight: '500',
+        },
     },
     {
-        name_cn: 'Sally',
-        name_en: 'Sally',
-        instrement: 'Liuqing',
+        id: 2,
+        name_cn: 'SALLY XI',
+        name_en: 'SALLY XI',
+        instrement: 'Liuqing Artist in Residence',
         about:{
             name:'Sally             柳琴、中阮教师',
-            standard: '教学程度：AAAA级       教学费用：$70/60分钟（一对一）',
+            standard: '',
             profile:[
                 '2007年本科就读于山东艺术学院柳琴表演专业，2011年以专业第一的成绩考入山东艺术学院，继续攻读硕士研究生-柳琴演奏与教学',
                 '2010年首届柳琴北京邀请赛专业中青组 优秀演奏奖',
@@ -54,15 +66,51 @@ export default [
         },
         avatar: 'https://ywmusic-resource.s3.ap-southeast-2.amazonaws.com/teacher/sally_avatar.png',
         image: 'https://ywmusic-resource.s3.ap-southeast-2.amazonaws.com/teacher/sally_image.jpg',
-        position: "teacher",
+        position: "Co-founder",
+        position_style: {
+            fontSize: '16px',
+            fontWeight: '500',
+        },
     },
     {
+        id: 3,
+        name_cn: 'RAY LIN',
+        name_en: 'RAY LIN',
+        instrement: 'Composer in Residence',
+        about: [
+            'Que ensland Music Award winner Ray Lin is a versatile composer, conductor, arranger, and orchestrator for concert hall and screens. His works has been featured in concerts internationally in the US and China; and through a range of prestigious local, state and national venues and platforms in Australia, including QPAC, Brisbane City Hall, 4MBS Classic FM, ABC ME, SBS, Old Museum Concert Hall, Sydney State Theatre, GOMA and more. Ray’s music has been performed by the Queensland Pops Orchestra, Camerata – QLD’s Chamber Orchestra, Symphony Central Coast, Topology, Queensland Conservatorium Symphony and Wind orchestras, members from Ba Ban Chinese Music Society of New York, Orchestral Naturalis (QCGU) and others. ',
+            'Ray has received many outstanding awards for his works, including winning the Contemporary Classical Song of the Year prize at the 2020 Queensland Music Awards, and receiving second place in the 2021 National Youth Arranging Competition hosted by Music Arrangers’ Guild Australia. He was awarded the a David Blumberg Award from the American Society of Music Arrangers and Composers in 2022, Honorable Mention Award (Top 5) in Queensland Music Festival’s 2018 “Score-IT(Plus)” film scoring competition and reached the semi-final in the 2020 Walter Hussey Composition Competition (UK). ',
+            'Some of Ray’s compositional highlights include being Camerata-Queensland’s Chamber Orchestra’s emerging composer-in-residence for 2023, receiving a commission from the Australian Broadcasting Corporation (ABC, 2022), premiering a chamber work for a East-west cross-cultural ensemble in New York in 2022, co-composed the soundtracks for the 2021 “European Masterpieces” exhibition sound installation project in Queensland Gallery of Modern Arts (exhibition in collaboration with Metropolitan Museum of New York); premiering an orchestral tribute “Waltz No.007” at the Film-Harmonic concert (at part of Brisbane Festival 2021); premiered “The Royal Fanfare” performed by the Queensland Pops Orchestra at the QPAC Concert Hall, premiered two pieces in the 2020 “One World, One Family” 24-hour virtual concert hosted and broadcasted by Chinese CCTV, etc.',
+            'Ray is also an active arranger and orchestrator for commercial concerts and media projects, he has arranged/orchestrated for the BrisAsia Festival “Rare Voices” concert (2023), Brisbane Festival “Film Harmonic” concert (2022), “Know It Alls” TV show (ABC ME), 2019 IAUTV Spring Festival Gala 2018 Teressa Teng tribute concert supporting Lord Mayor’s Trust, 2017 Brisbane Chinese Festival Gala show (City Hall) and many more.',        
+            'Ray holds a Bachelor of Music (in composition) with distinction from Queensland Conservatorium Griffith University, and he was a recipient of the Sir Samuel Griffith Scholarship and Alan Lane Award for Composition. Ray has also been selected to participate in the Juilliard School of Music 2023 Summer Extension Programs for Composition and Conducting. Ray is currently undertaking the Masters of Arts Screen: Music course at the Australian Film, Television and Radio School.',        
+            'As a multi-instrumentalist, Ray had performed in the US, Australia and China; in a variety of live concerts, musical orchestras, commercial events as a guitarist, bassist, and keyboardist. Ray earned Grade 8 certificate for both guitar and bass early in his musical journey, and some notable performances include the 2019 Brisbane Chinese Cultural Festival (Brisbane City Hall), 2019 QYO “Concert at Twilight”, 2017 Pacific Basin Music Festival (Hawaii, USA), 2017 & 2019 Essentially Ellington Jazz Music Festival, and numerous musical productions in Brisbane.',
+        ],
+        about:{
+            name:'RAY LIN             COMPOSER, ARRANGER,',
+            standard: '',
+            profile:[
+                'Queensland Music Award winner Ray Lin is a versatile composer, conductor, arranger, and orchestrator for concert hall and screens. His works has been featured in concerts internationally in the US and China; and through a range of prestigious local, state and national venues and platforms in Australia, including QPAC, Brisbane City Hall, 4MBS Classic FM, ABC ME, SBS, Old Museum Concert Hall, Sydney State Theatre, GOMA and more. Ray’s music has been performed by the Queensland Pops Orchestra, Camerata – QLD’s Chamber Orchestra, Symphony Central Coast, Topology, Queensland Conservatorium Symphony and Wind orchestras, members from Ba Ban Chinese Music Society of New York, Orchestral Naturalis (QCGU) and others. ',
+                'Ray has received many outstanding awards for his works, including winning the Contemporary Classical Song of the Year prize at the 2020 Queensland Music Awards, and receiving second place in the 2021 National Youth Arranging Competition hosted by Music Arrangers’ Guild Australia. He was awarded the a David Blumberg Award from the American Society of Music Arrangers and Composers in 2022, Honorable Mention Award (Top 5) in Queensland Music Festival’s 2018 “Score-IT(Plus)” film scoring competition and reached the semi-final in the 2020 Walter Hussey Composition Competition (UK). ',
+                'Some of Ray’s compositional highlights include being Camerata-Queensland’s Chamber Orchestra’s emerging composer-in-residence for 2023, receiving a commission from the Australian Broadcasting Corporation (ABC, 2022), premiering a chamber work for a East-west cross-cultural ensemble in New York in 2022, co-composed the soundtracks for the 2021 “European Masterpieces” exhibition sound installation project in Queensland Gallery of Modern Arts (exhibition in collaboration with Metropolitan Museum of New York); premiering an orchestral tribute “Waltz No.007” at the Film-Harmonic concert (at part of Brisbane Festival 2021); premiered “The Royal Fanfare” performed by the Queensland Pops Orchestra at the QPAC Concert Hall, premiered two pieces in the 2020 “One World, One Family” 24-hour virtual concert hosted and broadcasted by Chinese CCTV, etc.',
+                'Ray is also an active arranger and orchestrator for commercial concerts and media projects, he has arranged/orchestrated for the BrisAsia Festival “Rare Voices” concert (2023), Brisbane Festival “Film Harmonic” concert (2022), “Know It Alls” TV show (ABC ME), 2019 IAUTV Spring Festival Gala 2018 Teressa Teng tribute concert supporting Lord Mayor’s Trust, 2017 Brisbane Chinese Festival Gala show (City Hall) and many more.',        
+                'Ray holds a Bachelor of Music (in composition) with distinction from Queensland Conservatorium Griffith University, and he was a recipient of the Sir Samuel Griffith Scholarship and Alan Lane Award for Composition. Ray has also been selected to participate in the Juilliard School of Music 2023 Summer Extension Programs for Composition and Conducting. Ray is currently undertaking the Masters of Arts Screen: Music course at the Australian Film, Television and Radio School.',        
+                'As a multi-instrumentalist, Ray had performed in the US, Australia and China; in a variety of live concerts, musical orchestras, commercial events as a guitarist, bassist, and keyboardist. Ray earned Grade 8 certificate for both guitar and bass early in his musical journey, and some notable performances include the 2019 Brisbane Chinese Cultural Festival (Brisbane City Hall), 2019 QYO “Concert at Twilight”, 2017 Pacific Basin Music Festival (Hawaii, USA), 2017 & 2019 Essentially Ellington Jazz Music Festival, and numerous musical productions in Brisbane.',
+            ],
+        },
+        avatar: 'https://ywmusic-resource.s3.ap-southeast-2.amazonaws.com/teacher/ray-avatar.jpg',
+        image: 'https://ywmusic-resource.s3.ap-southeast-2.amazonaws.com/teacher/ray-image.jpg',
+        position: "",
+        position_style: {
+        },
+    },
+    {
+        id: 4,
         name_cn: '张楚楚',
-        name_en: 'ChuChu',
-        instrement: 'Pipa',
+        name_en: 'CHUCHU ZHANG',
+        instrement: 'Pipa Artist in Residence',
         about: [
             '张楚楚             琵琶教师',
-            '教学程度：AAAAA级       教学费用：$80/60分钟（一对一）',
+            '',
             '',
             '本科毕业于西安音乐学院民乐系琵琶专业',
             '硕士毕业于昆士兰大学音乐学与音乐教育专业',
@@ -77,7 +125,7 @@ export default [
         ],
         about:{
             name:'张楚楚             琵琶教师',
-            standard: '教学程度：AAAAA级       教学费用：$80/60分钟（一对一）',
+            standard: '',
             profile:[
                 '本科毕业于西安音乐学院民乐系琵琶专业',
                 '硕士毕业于昆士兰大学音乐学与音乐教育专业',
@@ -95,12 +143,15 @@ export default [
         },
         avatar: 'https://ywmusic-resource.s3.ap-southeast-2.amazonaws.com/teacher/%E5%BC%A0%E6%A5%9A%E6%A5%9A_avatar.png',
         image: 'https://ywmusic-resource.s3.ap-southeast-2.amazonaws.com/teacher/%E5%BC%A0%E6%A5%9A%E6%A5%9A_image.jpg',
-        position: "teacher",
+        position: "",
+        position_style: {
+        },
     },
     {
+        id: 5,
         name_cn: 'Anna 陈芳慧',
-        name_en: 'Anna',
-        instrement: 'Erhu',
+        name_en: 'ANNA CHEN',
+        instrement: 'Erhu Artist in Residence',
         about:{
             name:'Anna 陈芳慧             二胡教师',
             standard: '教学程度：AAAAA级       教学费用：$80/60分钟（一对一）',
@@ -122,34 +173,9 @@ export default [
         },
         avatar: 'https://ywmusic-resource.s3.ap-southeast-2.amazonaws.com/teacher/anna_avatar.png',
         image: 'https://ywmusic-resource.s3.ap-southeast-2.amazonaws.com/teacher/anna_image.jpg',
-        position: "teacher",
-    },
-    {
-        name_cn: 'RAY LIN',
-        name_en: 'RAY',
-        instrement: 'COMPOSER, ARRANGER, ORCHESTRATOR, CONDUCTOR, INSTRUMENTALIST',
-        about: [
-            'Queensland Music Award winner Ray Lin is a versatile composer, conductor, arranger, and orchestrator for concert hall and screens. His works has been featured in concerts internationally in the US and China; and through a range of prestigious local, state and national venues and platforms in Australia, including QPAC, Brisbane City Hall, 4MBS Classic FM, ABC ME, SBS, Old Museum Concert Hall, Sydney State Theatre, GOMA and more. Ray’s music has been performed by the Queensland Pops Orchestra, Camerata – QLD’s Chamber Orchestra, Symphony Central Coast, Topology, Queensland Conservatorium Symphony and Wind orchestras, members from Ba Ban Chinese Music Society of New York, Orchestral Naturalis (QCGU) and others. ',
-            'Ray has received many outstanding awards for his works, including winning the Contemporary Classical Song of the Year prize at the 2020 Queensland Music Awards, and receiving second place in the 2021 National Youth Arranging Competition hosted by Music Arrangers’ Guild Australia. He was awarded the a David Blumberg Award from the American Society of Music Arrangers and Composers in 2022, Honorable Mention Award (Top 5) in Queensland Music Festival’s 2018 “Score-IT(Plus)” film scoring competition and reached the semi-final in the 2020 Walter Hussey Composition Competition (UK). ',
-            'Some of Ray’s compositional highlights include being Camerata-Queensland’s Chamber Orchestra’s emerging composer-in-residence for 2023, receiving a commission from the Australian Broadcasting Corporation (ABC, 2022), premiering a chamber work for a East-west cross-cultural ensemble in New York in 2022, co-composed the soundtracks for the 2021 “European Masterpieces” exhibition sound installation project in Queensland Gallery of Modern Arts (exhibition in collaboration with Metropolitan Museum of New York); premiering an orchestral tribute “Waltz No.007” at the Film-Harmonic concert (at part of Brisbane Festival 2021); premiered “The Royal Fanfare” performed by the Queensland Pops Orchestra at the QPAC Concert Hall, premiered two pieces in the 2020 “One World, One Family” 24-hour virtual concert hosted and broadcasted by Chinese CCTV, etc.',
-            'Ray is also an active arranger and orchestrator for commercial concerts and media projects, he has arranged/orchestrated for the BrisAsia Festival “Rare Voices” concert (2023), Brisbane Festival “Film Harmonic” concert (2022), “Know It Alls” TV show (ABC ME), 2019 IAUTV Spring Festival Gala 2018 Teressa Teng tribute concert supporting Lord Mayor’s Trust, 2017 Brisbane Chinese Festival Gala show (City Hall) and many more.',        
-            'Ray holds a Bachelor of Music (in composition) with distinction from Queensland Conservatorium Griffith University, and he was a recipient of the Sir Samuel Griffith Scholarship and Alan Lane Award for Composition. Ray has also been selected to participate in the Juilliard School of Music 2023 Summer Extension Programs for Composition and Conducting. Ray is currently undertaking the Masters of Arts Screen: Music course at the Australian Film, Television and Radio School.',        
-            'As a multi-instrumentalist, Ray had performed in the US, Australia and China; in a variety of live concerts, musical orchestras, commercial events as a guitarist, bassist, and keyboardist. Ray earned Grade 8 certificate for both guitar and bass early in his musical journey, and some notable performances include the 2019 Brisbane Chinese Cultural Festival (Brisbane City Hall), 2019 QYO “Concert at Twilight”, 2017 Pacific Basin Music Festival (Hawaii, USA), 2017 & 2019 Essentially Ellington Jazz Music Festival, and numerous musical productions in Brisbane.',
-        ],
-        about:{
-            name:'RAY LIN             COMPOSER, ARRANGER,',
-            standard: '',
-            profile:[
-                'Queensland Music Award winner Ray Lin is a versatile composer, conductor, arranger, and orchestrator for concert hall and screens. His works has been featured in concerts internationally in the US and China; and through a range of prestigious local, state and national venues and platforms in Australia, including QPAC, Brisbane City Hall, 4MBS Classic FM, ABC ME, SBS, Old Museum Concert Hall, Sydney State Theatre, GOMA and more. Ray’s music has been performed by the Queensland Pops Orchestra, Camerata – QLD’s Chamber Orchestra, Symphony Central Coast, Topology, Queensland Conservatorium Symphony and Wind orchestras, members from Ba Ban Chinese Music Society of New York, Orchestral Naturalis (QCGU) and others. ',
-                'Ray has received many outstanding awards for his works, including winning the Contemporary Classical Song of the Year prize at the 2020 Queensland Music Awards, and receiving second place in the 2021 National Youth Arranging Competition hosted by Music Arrangers’ Guild Australia. He was awarded the a David Blumberg Award from the American Society of Music Arrangers and Composers in 2022, Honorable Mention Award (Top 5) in Queensland Music Festival’s 2018 “Score-IT(Plus)” film scoring competition and reached the semi-final in the 2020 Walter Hussey Composition Competition (UK). ',
-                'Some of Ray’s compositional highlights include being Camerata-Queensland’s Chamber Orchestra’s emerging composer-in-residence for 2023, receiving a commission from the Australian Broadcasting Corporation (ABC, 2022), premiering a chamber work for a East-west cross-cultural ensemble in New York in 2022, co-composed the soundtracks for the 2021 “European Masterpieces” exhibition sound installation project in Queensland Gallery of Modern Arts (exhibition in collaboration with Metropolitan Museum of New York); premiering an orchestral tribute “Waltz No.007” at the Film-Harmonic concert (at part of Brisbane Festival 2021); premiered “The Royal Fanfare” performed by the Queensland Pops Orchestra at the QPAC Concert Hall, premiered two pieces in the 2020 “One World, One Family” 24-hour virtual concert hosted and broadcasted by Chinese CCTV, etc.',
-                'Ray is also an active arranger and orchestrator for commercial concerts and media projects, he has arranged/orchestrated for the BrisAsia Festival “Rare Voices” concert (2023), Brisbane Festival “Film Harmonic” concert (2022), “Know It Alls” TV show (ABC ME), 2019 IAUTV Spring Festival Gala 2018 Teressa Teng tribute concert supporting Lord Mayor’s Trust, 2017 Brisbane Chinese Festival Gala show (City Hall) and many more.',        
-                'Ray holds a Bachelor of Music (in composition) with distinction from Queensland Conservatorium Griffith University, and he was a recipient of the Sir Samuel Griffith Scholarship and Alan Lane Award for Composition. Ray has also been selected to participate in the Juilliard School of Music 2023 Summer Extension Programs for Composition and Conducting. Ray is currently undertaking the Masters of Arts Screen: Music course at the Australian Film, Television and Radio School.',        
-                'As a multi-instrumentalist, Ray had performed in the US, Australia and China; in a variety of live concerts, musical orchestras, commercial events as a guitarist, bassist, and keyboardist. Ray earned Grade 8 certificate for both guitar and bass early in his musical journey, and some notable performances include the 2019 Brisbane Chinese Cultural Festival (Brisbane City Hall), 2019 QYO “Concert at Twilight”, 2017 Pacific Basin Music Festival (Hawaii, USA), 2017 & 2019 Essentially Ellington Jazz Music Festival, and numerous musical productions in Brisbane.',
-            ],
+        position: "",
+        position_style: {
         },
-        avatar: 'https://ywmusic-resource.s3.ap-southeast-2.amazonaws.com/teacher/ray-avatar.jpg',
-        image: 'https://ywmusic-resource.s3.ap-southeast-2.amazonaws.com/teacher/ray-image.jpg',
-        position: "teacher",
     },
+    
 ]
