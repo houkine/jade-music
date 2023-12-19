@@ -1,5 +1,5 @@
 .biography-container{
-    width: 80%;
+    width: 70%;
     margin: 10px auto;
     flex: 1;
     display: flex;
@@ -12,10 +12,12 @@
 }
 
 .biography-content{
+    width: 100%;
     display: flex;
     margin: 0 auto;
     margin-top: 50px;
     overflow-y: auto;
+
 }
 
 .biography-content-img{

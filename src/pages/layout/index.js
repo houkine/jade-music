@@ -6,13 +6,13 @@ import { IconContext } from "react-icons";
 import { useNavigate, useLocation, Outlet } from "react-router-dom"
 
 import routerList from '../../constant/router'
-import logo from '../../logo.svg';
+import logo from '../../assert/logo/logo.jpg';
 import FloatingWindow from './floatingWindow';
-import sliderBar from './sliderBar';
+import SliderBar from './sliderBar';
 
 import { AiOutlineUnorderedList, } from "react-icons/ai";
 import { useEffect, useState, useContext } from "react";
-import languageContext from "../../constant/language";
+import languageContext,{CN,EN} from "../../constant/language";
 
 const Index = () =>{
     const navigate = useNavigate()
@@ -32,26 +32,24 @@ const Index = () =>{
         <languageContext.Provider value={language}>
             <div className="layout-container">
                 <div className="layout-header">
-                    <div className="layout-header-logo" onClick={()=>navigate('/')}>
-                        MUSIC
-                    </div>
+                    <img className="layout-header-logo" onClick={()=>navigate('/')} src={logo} alt='' />
                     <div className="layout-header-tagbar">
                         {routerList.map((router,index)=>(
                             <div 
-                                className={tab==router.navigate?"layout-header-tag-selected":"layout-header-tag"}
+                                className={tab===router.navigate?"layout-header-tag-selected":"layout-header-tag"}
                                 onClick={()=>TabOnClick(router)}
-                            >{language=='en'?router.title_en:router.title_cn}</div>
+                            >{language===EN?router.title_en:router.title_cn}</div>
                         ))}
                     </div>
                     <div className="layout-header-languagebar">
                         <div 
-                            className={language=='cn'?"layout-header-languageicon-selected":"layout-header-languageicon"}
-                            onClick={()=>setLanguage('cn')}
+                            className={language===CN?"layout-header-languageicon-selected":"layout-header-languageicon"}
+                            onClick={()=>setLanguage(CN)}
                         >{'中'}</div>
                         <div className="layout-header-languageicon">{'|'}</div>
                         <div 
-                            className={language=='en'?"layout-header-languageicon-selected":"layout-header-languageicon"}
-                            onClick={()=>setLanguage('en')}
+                            className={language===EN?"layout-header-languageicon-selected":"layout-header-languageicon"}
+                            onClick={()=>setLanguage(EN)}
                         >{'EN'}</div>
                     </div>
                     <div className="layout-header-slider-icon">
@@ -62,7 +60,7 @@ const Index = () =>{
                     <Outlet />
                 </div>
                 <FloatingWindow />
-                <sliderBar />
+                {/* <SliderBar /> */}
                 
             </div>
         </languageContext.Provider>

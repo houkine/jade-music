@@ -1,8 +1,9 @@
 import './index.css'
 import { Link } from "react-router-dom"
 import { useHref } from "react-router-dom"
-import { useEffect,useState } from 'react';
+import { useEffect,useState,useContext } from 'react';
 import teacherList from '../../constant/teacher'
+import languageContext,{CN,EN} from "../../constant/language";
 
 import { BiSolidUpArrow,BiSolidDownArrow } from "react-icons/bi";
 
@@ -10,13 +11,12 @@ import { BiSolidUpArrow,BiSolidDownArrow } from "react-icons/bi";
 const Index = () =>{
     const href = useHref()
     const [teacher, setTeacher] = useState()
-
+    const language = useContext(languageContext)
     useEffect(() => {
       let t_id_array=href.split('/')
         for (let index = 0; index < teacherList.length; index++) {
             if (teacherList[index].id==t_id_array[t_id_array.length-1])
-            {setTeacher(teacherList[index])
-            console.log(teacherList[index]);}
+            {setTeacher(teacherList[index])}
         }
     }, [])
     
@@ -27,14 +27,10 @@ const Index = () =>{
                 <div className="biography-instrement">{teacher?.instrement}</div>
             </div>
             <div className="biography-content">
-                <img className="biography-content-img" src={teacher&&teacher.avatar}/>
-                {teacher && <div className="biography-content-about">
-                    <p>{teacher.about.name}</p>    
-                    <p>{teacher.about.standard}</p>
-                    {teacher.about.profile && <Sector title={'profile'} content={teacher.about.profile}/>}
-                    {teacher.about.experience && <Sector title={'experience'} content={teacher.about.experience}/>}
-                    {teacher.about.contribution && <Sector title={'contribution'} content={teacher.about.contribution}/>}
-                </div>}
+                <img className="biography-content-img" src={teacher&&teacher.avatar} alt=''/>
+                <div className="biography-content-about">
+                    {language==EN?teacher?.about_en.split('\n').map((para,index)=><p>{para}</p>):teacher?.about_cn.split('\n').map((para,index)=><p>{para}</p>)}
+                </div>
             </div>
         </div>
     )

@@ -20,10 +20,9 @@
 }
 
 .layout-header-logo{
-    color: black;
     margin-left: 50px;
-    font-size: 20px;
     cursor: pointer;
+    width: 200px;
 }
 .layout-header-tagbar{
     display: flex;

@@ -1,5 +1,4 @@
-
-
+/* eslint-disable import/no-anonymous-default-export */
 export default [
     {
         navigate: '/',
@@ -30,10 +29,5 @@ export default [
         navigate: '/contact',
         title_en: 'Contact',
         title_cn: '联系我们',
-    },
-    {
-        navigate: '/login',
-        title_en: 'Login',
-        title_cn: '登录',
     },
 ]

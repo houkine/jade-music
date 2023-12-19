@@ -40,6 +40,9 @@
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+
+    width: 50%;
+    /* border: 1px solid black; */
 }
 
 
@@ -48,19 +51,21 @@
     margin: 10px auto;
     display: flex;
     background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .activityCard-image{
-    width: 500px;
+    max-height: 700px;
+    max-width: 70%;
+    border-radius: 10px;
 }
 
 .activityCard-content{
-    margin-left: 20px;
-    width: 500px;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    max-height: 200px;
-    overflow-y: auto;
+    
 }
 
 .activityCard-content::-webkit-scrollbar{
@@ -111,7 +116,7 @@
 }
 .activityCard-content-link{
     display: flex;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 /* ------------------------- */
 .activityCard-font1{
@@ -124,4 +129,9 @@
     font-size: 18px;
     font-weight: bold;
     text-align: center;
+}
+
+.activityCard-content-item{
+    margin: 5px;
+    cursor: pointer;
 }

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 import './index.css'
 import AboutusList from '../../assert/aboutus';
-import ArrowButton from '../../components/arrowButton';
 import { useState, useEffect } from "react";
 
 const getBG = (index) => AboutusList[index]
@@ -17,19 +16,7 @@ const Index = () => {
     return (
         <div className="home-container">
             <div className="home-content">
-                {/* <div className="home-arrowButton-left">
-                    <ArrowButton 
-                        content={"<"} 
-                        onClick={()=> index>0 && setIndex(index-1)}
-                    />
-                </div> */}
-                <img className="home-bg" src={getBG(index)}></img>
-                {/* <div className="home-arrowButton-right">
-                    <ArrowButton 
-                        content={">"}
-                        onClick={()=> index<AboutusList.length-1&&setIndex(index+1)}
-                    />
-                </div> */}
+                <img className="home-bg" src={getBG(index)} alt=""></img>
             </div>
             <div className="home-buttonList">
                 {AboutusList.map((a, i) => (<div className={i == index ? "home-button-selected" : "home-button"} onClick={() => setIndex(i)} />))}
