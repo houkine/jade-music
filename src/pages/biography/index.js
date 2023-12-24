@@ -6,6 +6,7 @@ import teacherList from '../../constant/teacher'
 import languageContext,{CN,EN} from "../../constant/language";
 
 import { BiSolidUpArrow,BiSolidDownArrow } from "react-icons/bi";
+import {isMobile} from 'react-device-detect'
 
 
 const Index = () =>{
@@ -24,13 +25,24 @@ const Index = () =>{
         <div className="biography-container" >
             <div className="biography-title">
                 <div className="biography-font2">{teacher?.name_cn}</div>
-                <div className="biography-instrement">{teacher?.instrement}</div>
             </div>
             <div className="biography-content">
                 <img className="biography-content-img" src={teacher&&teacher.avatar} alt=''/>
-                <div className="biography-content-about">
-                    {language==EN?teacher?.about_en.split('\n').map((para,index)=><p>{para}</p>):teacher?.about_cn.split('\n').map((para,index)=><p>{para}</p>)}
-                </div>
+                {isMobile?(
+                    <div className="biography-content-about-mobile">
+                        {language==EN?
+                            teacher?.about_en.split('\n').map((para,index)=><p>{para}</p>):
+                            teacher?.about_cn.split('\n').map((para,index)=><p>{para}</p>)
+                        }
+                    </div>
+                ):(
+                    <div className="biography-content-about">
+                        {language==EN?
+                            teacher?.about_en.split('\n').map((para,index)=><p>{para}</p>):
+                            teacher?.about_cn.split('\n').map((para,index)=><p>{para}</p>)
+                        }
+                    </div>
+                )}
             </div>
         </div>
     )

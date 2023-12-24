@@ -108,6 +108,9 @@
     .layout-header-tagbar{
         display: none;
     }
+    .layout-header-logo{
+        margin-left: 0px;
+    }
 }
 
 .layout-body{
@@ -184,5 +187,30 @@
 /* ------------------------- portfolioCard */
 
 .sliderbar-container{
-    width: 30px;
+    width: 150px;
+    height: 100%;
+    background-color: #fff;
+
+    position: absolute;
+    right: 0;
+    top: 50px;
+    transition:display 1s;
+}
+.sliderbar-container-close{
+    display: none;
+    transition:display 1s;
+
+}
+.sliderbar-header-tag{
+    margin: 20px;
+    cursor: pointer;
+    color: #aaa;
+    font-size: 16px;
+}
+.sliderbar-header-tag-selected{
+    margin: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
 }

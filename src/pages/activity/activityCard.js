@@ -9,7 +9,9 @@ const Index = ({activity}) =>{
 
     return(
         <div className="activityCard-container">
-            <img className="activityCard-image" src={activity.image} alt=""/>
+            <div className="activityCard-imageContainer">
+                <img className="activityCard-image" src={activity.image} alt="" onClick={()=>window.open(activity.Facebook)}/>
+            </div>
             <div className="activityCard-content">
                 <div className="activityCard-content-detail">
                     <div className="activityCard-font2">{language===EN?activity.title_en:activity.title_cn}</div>

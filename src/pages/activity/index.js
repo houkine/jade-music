@@ -6,7 +6,6 @@ import ActivityCard from './activityCard'
 
 
 const Index = () =>{
-    const [number, setNumber] = useState(0)
 
     return(
         <div className="activity-container">

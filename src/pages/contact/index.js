@@ -22,7 +22,7 @@ const Index = () =>{
             </div>
             <div className="contact-detail">
                 <div className="contact-decoration">EMAIL</div>
-                <div>xxxxx@email.com</div>
+                <div>echoofjademusic@gmail.com</div>
             </div>
             <div className="contact-detail">
                 <div className="contact-decoration">NUMBER</div>

@@ -10,8 +10,8 @@ import logo from '../../assert/logo/logo.jpg';
 import FloatingWindow from './floatingWindow';
 import SliderBar from './sliderBar';
 
-import { AiOutlineUnorderedList, } from "react-icons/ai";
-import { useEffect, useState, useContext } from "react";
+import { AiOutlineUnorderedList,AiFillCloseCircle } from "react-icons/ai";
+import { useEffect, useState } from "react";
 import languageContext,{CN,EN} from "../../constant/language";
 
 const Index = () =>{
@@ -20,6 +20,7 @@ const Index = () =>{
 
     const [tab,setTab] = useState()
     const [language,setLanguage] = useState('en')
+    const [isSideBarOpen,setIsSideBarOpen] = useState(false)
 
     useEffect(()=>setTab(location.pathname),[])
 
@@ -53,14 +54,18 @@ const Index = () =>{
                         >{'EN'}</div>
                     </div>
                     <div className="layout-header-slider-icon">
-                        <AiOutlineUnorderedList className="layout-header-slider" size="20"/>
+                        {isSideBarOpen?(
+                            <AiFillCloseCircle className="layout-header-slider" size="20" onClick={()=>setIsSideBarOpen(false)}/>
+                        ):(
+                            <AiOutlineUnorderedList className="layout-header-slider" size="20" onClick={()=>setIsSideBarOpen(true)}/>
+                        )}
                     </div>
                 </div>
-                <div className="layout-body">
+                <div className="layout-body"  onClick={()=>setIsSideBarOpen(false)}>
                     <Outlet />
                 </div>
                 <FloatingWindow />
-                {/* <SliderBar /> */}
+                <SliderBar isOpen={isSideBarOpen} tab={tab} TabOnClick={TabOnClick} onClose={()=>setIsSideBarOpen(false)}/>
                 
             </div>
         </languageContext.Provider>

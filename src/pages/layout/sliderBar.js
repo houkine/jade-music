@@ -1,24 +1,20 @@
-import {useState} from 'react'
+import {useState,useContext} from 'react'
 import './index.css'
 import { BsFacebook,BsInstagram,BsTwitter } from "react-icons/bs";
 import routerList from '../../constant/router'
+import languageContext,{CN,EN} from "../../constant/language";
 
-const Index = () =>{
-
-    const [isOpen, setIsOpen] = useState(false)
+const Index = ({isOpen,tab,TabOnClick,onClose}) =>{
+    const language = useContext(languageContext)
 
     return(
-        <div className="sliderbar-container">
-            <div 
-                className="floatingWindow-switch"
-                onClick={()=>setIsOpen(!isOpen)}
-            >{isOpen?'-':'+'}</div>
-            
-            {isOpen && <div className="floatingWindow-content">
-                <BsFacebook className="floatingWindow-content-item" size={20} onClick={()=>window.open('https://www.facebook.com/ywmusic88')}/>
-                <BsInstagram className="floatingWindow-content-item" size={20}/>
-                <BsTwitter className="floatingWindow-content-item" size={20}/>
-            </div>}
+        <div className={isOpen?"sliderbar-container":"sliderbar-container-close"}>
+            {routerList.map((router,index)=>(
+                <div 
+                    className={tab===router.navigate?"sliderbar-header-tag-selected":"sliderbar-header-tag"}
+                    onClick={()=>TabOnClick(router)}
+                >{language===EN?router.title_en:router.title_cn}</div>
+            ))}
         </div>
     )
 }

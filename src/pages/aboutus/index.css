@@ -47,6 +47,7 @@
     cursor: pointer;
     /* border: 1px solid black; */
     border-radius: 25px;
+
 }
 
 .aboutus-content-list-arrow:hover{
@@ -65,7 +66,6 @@
 .aboutus-content-listItem{
     width: 33%;
     display: flex;
-
 }
 
 .aboutus-content-detail{
@@ -82,6 +82,12 @@
     margin: auto 10px;
     margin-top: 10px;
     
+}
+
+@media(max-width:576px){
+    .aboutus-content-listItem{
+        width: 100%;
+    }
 }
 
 /* ------------------------- portfolioCard */
@@ -104,9 +110,13 @@
     height: 350px;
     border-radius: 5px;
     cursor: pointer;
+    transition: box-shadow,opacity 0.5s;
+
 }
 .portfolioCard-content-image:hover{
-    opacity: 0.6;
+    opacity: 0.7;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 255, 0.3);
+
 }
 
 .portfolioCard-content-name{
